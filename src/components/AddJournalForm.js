@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-function AddJournalForm() {
+function AddJournalForm({onAddNewEntry}) {
     const [newEntry, setNewEntry] = useState({
         date: new Intl.DateTimeFormat("en-US", {year: "numeric", month: "2-digit", day: "2-digit"}).format(Date.now()),
         mood: "",
@@ -26,7 +26,15 @@ function AddJournalForm() {
             body: JSON.stringify(newEntry)
         })
         .then((r) => r.json())
-        .then((newEntry) => console.log(newEntry))
+        .then((newEntry) => onAddNewEntry(newEntry));
+
+        setNewEntry({
+            date: new Intl.DateTimeFormat("en-US", {year: "numeric", month: "2-digit", day: "2-digit"}).format(Date.now()),
+            mood: "",
+            activity: "",
+            duration: 0,
+            description: ""
+        })
     };
 
     return (
