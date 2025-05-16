@@ -1,6 +1,7 @@
 import {useState} from "react";
+import { useOutletContext } from "react-router-dom";
 
-function AddJournalForm({onAddNewEntry}) {
+function AddJournalForm() {
     const [newEntry, setNewEntry] = useState({
         date: new Intl.DateTimeFormat("en-US", {year: "numeric", month: "2-digit", day: "2-digit"}).format(Date.now()),
         mood: "",
@@ -16,6 +17,8 @@ function AddJournalForm({onAddNewEntry}) {
         })
     };
 
+    const {onAddEntry} = useOutletContext();
+
     function handleSubmit(event){
         event.preventDefault();
         fetch("http://localhost:3000/entries", {
@@ -26,7 +29,7 @@ function AddJournalForm({onAddNewEntry}) {
             body: JSON.stringify(newEntry)
         })
         .then((r) => r.json())
-        .then((newEntry) => onAddNewEntry(newEntry));
+        .then((newEntry) => onAddEntry(newEntry));
 
         setNewEntry({
             date: new Intl.DateTimeFormat("en-US", {year: "numeric", month: "2-digit", day: "2-digit"}).format(Date.now()),
@@ -36,6 +39,7 @@ function AddJournalForm({onAddNewEntry}) {
             description: ""
         })
     };
+
 
     return (
         <div className="new-entry-form">

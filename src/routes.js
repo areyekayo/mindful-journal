@@ -8,7 +8,7 @@ const routes = [
         element: <App />,
         children: [
             {
-                path: "/",
+                path: "/entries",
                 element: <JournalList />
             },
             {

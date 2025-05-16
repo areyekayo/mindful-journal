@@ -2,6 +2,8 @@ import '../App.css';
 import React, {useState, useEffect} from "react";
 import JournalList from './JournalList';
 import AddJournalForm from './AddJournalForm';
+import NavBar from './NavBar';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   const [entries, setEntries] = useState([]);
@@ -21,9 +23,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Mindful Journal</h1>
+        <NavBar />
       </header>
-      <AddJournalForm onAddNewEntry={addNewEntry} />
-      <JournalList entries={entries} />
+      <Outlet context={{entries: entries, onAddEntry: addNewEntry}} />
     </div>
   );
 }

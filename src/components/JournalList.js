@@ -1,8 +1,9 @@
 import JournalCard from "./JournalCard";
+import { useOutletContext } from "react-router-dom";
 
-function JournalList({entries}){
+function JournalList(){
 
-    //console.log("entries in journal list", entries)
+    const {entries} = useOutletContext();
 
     return (
         <div>
