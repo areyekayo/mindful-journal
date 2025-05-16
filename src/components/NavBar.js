@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
     return (
         <nav>
-            <NavLink to="/entries">Journal</NavLink>
-            <NavLink to="/newEntry">Add Entry</NavLink>
+            <NavLink to="/entries" className="nav-link">Journal</NavLink>
+            <NavLink to="/newEntry" className="nav-link">Add Entry</NavLink>
         </nav>
     )
 };
