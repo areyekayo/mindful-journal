@@ -30,8 +30,40 @@ function AddJournalForm() {
     };
 
     return (
-        <div>
-            {console.log(newEntry)}
+        <div className="new-entry-form">
+            <h2>Add Journal Entry</h2>
+            <form onSubmit={handleSubmit}>
+                <select name="mood" onChange={handleChange}>
+                    <option>Select Mood</option>
+                    <option value="great">Great</option>
+                    <option value="good">Good</option>
+                    <option value="meh">Meh</option>
+                    <option value="bad">Bad</option>
+                    <option value="awful">Awful</option>
+                </select>
+                <select name="activity" onChange={handleChange}>
+                    <option>Select Activity</option>
+                    <option value="sitting">Sitting</option>
+                    <option value="walking">Walking</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="retreat">Retreat</option>
+                </select>
+                <p>Activity Duration (minutes):</p>
+                <input 
+                    type="number"
+                    name="duration"
+                    placeholder="Activity Duration (minutes)"
+                    onChange={handleChange}
+                    value={newEntry.duration}
+                />
+                <textarea 
+                    placeholder="Description"
+                    name="description"
+                    value={newEntry.description}
+                    onChange={handleChange}
+                />
+                <button type="submit">Add Entry</button>
+            </form>
         </div>
     )
 };
