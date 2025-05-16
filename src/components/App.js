@@ -1,6 +1,17 @@
 import '../App.css';
+import React, {useState, useEffect} from "react";
 
 function App() {
+  const [entries, setEntries] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/entries")
+      .then((r) => r.json())
+      .then((data) => setEntries(data));
+  }, [])
+
+  //console.log("entries", entries);
+
   return (
     <div className="App">
       <header className="App-header">
