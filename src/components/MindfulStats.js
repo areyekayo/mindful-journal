@@ -15,6 +15,11 @@ function MindfulStats(){
         return acc;
     },{});
 
+    const activityCounts = entries.reduce((acc, entry) => {
+        acc[entry.activity] = (acc[entry.activity] || 0) + 1;
+        return acc;
+    },{});
+
     return (
         <div className="stats">
             <h1>Mindful Journal Stats</h1>
@@ -28,6 +33,14 @@ function MindfulStats(){
                 <li>meh {moodCounts.meh || 0} times</li>
                 <li>bad {moodCounts.bad || 0} times</li>
                 <li>awful {moodCounts.awful || 0} times</li>
+           </ul>
+
+           <h3>Activities</h3>
+           <ul>
+                <li>Yoga {activityCounts.Yoga || 0} times</li>
+                <li>Meditation {activityCounts.Meditation || 0} times </li>
+                <li>Walking {activityCounts.Walking || 0} times</li>
+                <li>Retreat {activityCounts.Retreat || 0} times</li>
            </ul>
         </div>
     )

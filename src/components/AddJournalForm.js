@@ -32,7 +32,6 @@ function AddJournalForm() {
         .then((newEntry) => onAddEntry(newEntry));
 
         setNewEntry({
-            date: new Intl.DateTimeFormat("en-US", {year: "numeric", month: "2-digit", day: "2-digit"}).format(Date.now()),
             mood: "",
             activity: "",
             duration: 0,
@@ -55,10 +54,11 @@ function AddJournalForm() {
                 </select>
                 <select name="activity" onChange={handleChange}>
                     <option>Select Activity</option>
-                    <option value="sitting">Meditation</option>
-                    <option value="walking">Walking</option>
-                    <option value="yoga">Yoga</option>
-                    <option value="retreat">Retreat</option>
+                    <option value="Meditation">Meditation</option>
+                    <option value="Walking">Walking</option>
+                    <option value="Yoga">Yoga</option>
+                    <option value="Retreat">Retreat</option>
+                    <option value="None">None</option>
                 </select>
                 <p>Activity Duration (minutes):
                 <input 
