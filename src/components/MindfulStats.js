@@ -22,11 +22,11 @@ function MindfulStats(){
 
     return (
         <div className="stats">
-            <h1>Mindful Journal Stats</h1>
+            <h1>Mindful Stats</h1>
 
-            <h3>You've written {entryCount} entries</h3>
-            <h3>You've had {totalMindfulMinutes} mindful minutes</h3>
-            
+            <h3>{entryCount} entries</h3>
+            <h3>{totalMindfulMinutes} mindful minutes</h3>
+
             <h3>You felt...</h3>
            <ul>
                 <li>great {moodCounts.great || 0} times</li>

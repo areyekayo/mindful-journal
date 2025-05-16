@@ -16,7 +16,7 @@ code {
   text-align: center;
   border: grey solid 1px;
   padding: 1rem;
-  width: 15rem;
+  width: 20rem;
   height: 20rem;
   display: inline-grid;
   margin: 1rem 2rem;
@@ -66,6 +66,10 @@ code {
   box-shadow: 0 2px 4px rgbha(0, 0, 0, 0.1);
   margin: 20px auto;
   max-width: 400px;
+}
+
+.stats h1 {
+  text-align: center;
 }
 
 .stats h3 {
