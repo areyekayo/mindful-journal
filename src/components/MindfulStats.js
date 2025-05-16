@@ -24,8 +24,8 @@ function MindfulStats(){
         <div className="stats">
             <h1>Mindful Journal Stats</h1>
 
-            <h3>{entryCount} entries</h3>
-            <h3>{totalMindfulMinutes} mindful minutes</h3>
+            <h3>You've written {entryCount} entries</h3>
+            <h3>You've had {totalMindfulMinutes} mindful minutes</h3>
             <h3>You felt...</h3>
            <ul>
                 <li>great {moodCounts.great || 0} times</li>
@@ -35,7 +35,7 @@ function MindfulStats(){
                 <li>awful {moodCounts.awful || 0} times</li>
            </ul>
 
-           <h3>Activities</h3>
+           <h3>You did...</h3>
            <ul>
                 <li>Yoga {activityCounts.Yoga || 0} times</li>
                 <li>Meditation {activityCounts.Meditation || 0} times </li>
