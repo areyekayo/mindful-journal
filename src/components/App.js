@@ -11,7 +11,10 @@ function App() {
       .then((data) => setEntries(data));
   }, [])
 
-  //console.log("entries", entries);
+  function addNewEntry(newEntry) {
+    setEntries([...entries, newEntry])
+  };
+
 
   return (
     <div className="App">
