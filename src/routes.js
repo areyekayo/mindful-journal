@@ -1,6 +1,7 @@
 import App from "./components/App";
 import AddJournalForm from "./components/AddJournalForm";
 import JournalList from "./components/JournalList";
+import MindfulStats from "./components/MindfulStats";
 
 const routes = [
     {
@@ -14,6 +15,10 @@ const routes = [
             {
                 path: "/newEntry",
                 element: <AddJournalForm />
+            },
+            {
+                path: "/stats",
+                element: <MindfulStats />
             }
         ]
     }

@@ -47,14 +47,14 @@ code {
 }
 
 .nav-link{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 150px;
-    padding: 5px;
-    margin: 0 6px 6px;
-    background: rgb(119, 119, 119);
-    text-decoration: none;
-    text-align: center;
-    font-size: 25px ;
-    color: white;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 150px;
+  padding: 5px;
+  margin: 0 6px 6px;
+  background: rgb(119, 119, 119);
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px ;
+  color: white;
 }
