@@ -11,28 +11,23 @@ function MindfulStats(){
     }, 0);
 
     const moodCounts = entries.reduce((acc, entry) => {
-        if (!acc[entry.mood]){
-            acc[entry.mood] = 1
-        }
-        else {
-            acc[entry.mood] += 1
-        };
+        acc[entry.mood] = (acc[entry.mood] || 0) + 1;
         return acc;
     },{});
 
-    console.log("mood counts", moodCounts)
-
     return (
         <div className="stats">
-            <p>{entryCount} entries</p>
-           <p>Total mindful minutes: {totalMindfulMinutes}</p>
-            <p>You felt...</p>
+            <h1>Mindful Journal Stats</h1>
+
+            <h3>{entryCount} entries</h3>
+            <h3>{totalMindfulMinutes} mindful minutes</h3>
+            <h3>You felt...</h3>
            <ul>
-                <li>great {moodCounts.great} times</li>
-                <li>good {moodCounts.good} times</li>
-                <li>meh {moodCounts.meh} times</li>
-                <li>bad {moodCounts.bad} times</li>
-                <li>awful {moodCounts.awful} times</li>
+                <li>great {moodCounts.great || 0} times</li>
+                <li>good {moodCounts.good || 0} times</li>
+                <li>meh {moodCounts.meh || 0} times</li>
+                <li>bad {moodCounts.bad || 0} times</li>
+                <li>awful {moodCounts.awful || 0} times</li>
            </ul>
         </div>
     )
