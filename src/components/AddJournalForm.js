@@ -56,14 +56,14 @@ function AddJournalForm({onAddNewEntry}) {
                     <option value="yoga">Yoga</option>
                     <option value="retreat">Retreat</option>
                 </select>
-                <p>Activity Duration (minutes):</p>
+                <p>Activity Duration (minutes):
                 <input 
                     type="number"
                     name="duration"
-                    placeholder="Activity Duration (minutes)"
                     onChange={handleChange}
                     value={newEntry.duration}
                 />
+                </p>
                 <textarea 
                     placeholder="Description"
                     name="description"
