@@ -9,7 +9,7 @@ const routes = [
         element: <App />,
         children: [
             {
-                path: "/entries",
+                path: "/",
                 element: <JournalList />
             },
             {

@@ -26,6 +26,7 @@ function MindfulStats(){
 
             <h3>You've written {entryCount} entries</h3>
             <h3>You've had {totalMindfulMinutes} mindful minutes</h3>
+            
             <h3>You felt...</h3>
            <ul>
                 <li>great {moodCounts.great || 0} times</li>
