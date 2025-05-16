@@ -1,7 +1,5 @@
 import '../App.css';
 import React, {useState, useEffect} from "react";
-import JournalList from './JournalList';
-import AddJournalForm from './AddJournalForm';
 import NavBar from './NavBar';
 import { Outlet } from 'react-router-dom';
 
@@ -17,7 +15,6 @@ function App() {
   function addNewEntry(newEntry) {
     setEntries([...entries, newEntry])
   };
-
 
   return (
     <div className="App">

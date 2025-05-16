@@ -8,14 +8,15 @@ function JournalList(){
     return (
         <div>
             {entries.map((entry) => (
-        <JournalCard
-            key={entry.id}
-            date={entry.date}
-            mood={entry.mood}
-            activity={entry.activity}
-            duration={entry.duration}
-            description={entry.description} />
-    ))}
+            <JournalCard
+                key={entry.id}
+                date={entry.date}
+                mood={entry.mood}
+                activity={entry.activity}
+                duration={entry.duration}
+                description={entry.description} 
+            />
+            ))}
         </div>
     )
 };
