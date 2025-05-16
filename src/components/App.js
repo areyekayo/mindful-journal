@@ -1,5 +1,6 @@
 import '../App.css';
 import React, {useState, useEffect} from "react";
+import JournalList from './JournalList';
 
 function App() {
   const [entries, setEntries] = useState([]);
@@ -17,6 +18,7 @@ function App() {
       <header className="App-header">
         <h1>Mindful Journal</h1>
       </header>
+      <JournalList entries={entries} />
     </div>
   );
 }
