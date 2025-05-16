@@ -51,7 +51,7 @@ function AddJournalForm({onAddNewEntry}) {
                 </select>
                 <select name="activity" onChange={handleChange}>
                     <option>Select Activity</option>
-                    <option value="sitting">Sitting</option>
+                    <option value="sitting">Meditation</option>
                     <option value="walking">Walking</option>
                     <option value="yoga">Yoga</option>
                     <option value="retreat">Retreat</option>
