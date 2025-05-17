@@ -12,6 +12,9 @@ function AddJournalForm() {
         description: ""
     });
 
+    //get onAddEntry from Outlet Context
+    const {onAddEntry} = useOutletContext();
+
     function handleChange(event){
         setNewEntry({
             ...newEntry,
@@ -19,17 +22,15 @@ function AddJournalForm() {
         })
     };
 
-    const {onAddEntry} = useOutletContext();
-
     function handleSubmit(event){
         event.preventDefault();
-
-        //reset errors
+        // reset stale errors from previous submits
         setErrors([])
-        //get errors synchronously from handleErrors
+        // get errors synchronously from handleErrors
         const tempErrors = handleErrors();
 
         if (tempErrors.length === 0) {
+            // if no errors, post new entry
             fetch("http://localhost:3000/entries", {
                 method: "POST",
                 headers: {
@@ -40,7 +41,7 @@ function AddJournalForm() {
             .then((r) => r.json())
             .then((newEntry) => onAddEntry(newEntry));
 
-            //reset form fields
+            // reset form fields
             setNewEntry({
                 mood: "",
                 activity: "",
@@ -49,6 +50,7 @@ function AddJournalForm() {
             })
         }
         else {
+            // if errors, set errors in state
             setErrors(tempErrors)
         }
     };
