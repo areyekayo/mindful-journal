@@ -53,7 +53,7 @@ function AddJournalForm() {
         }
     };
 
-    // function to synchronously check for missing form inputs and set error messages
+    // function to synchronously check for missing form inputs
     function handleErrors() {
         const tempErrors = []
 
@@ -71,7 +71,7 @@ function AddJournalForm() {
         <div className="new-entry-form">
             <h2>Add Journal Entry</h2>
             <form onSubmit={handleSubmit}>
-                <select name="mood" onChange={handleChange}>
+                <select name="mood" value={newEntry.mood} onChange={handleChange}>
                     <option value="">Select Mood</option>
                     <option value="great">Great</option>
                     <option value="good">Good</option>
@@ -79,7 +79,7 @@ function AddJournalForm() {
                     <option value="bad">Bad</option>
                     <option value="awful">Awful</option>
                 </select>
-                <select name="activity" onChange={handleChange}>
+                <select name="activity" value={newEntry.activity} onChange={handleChange}>
                     <option value="">Select Activity</option>
                     <option value="Meditation">Meditation</option>
                     <option value="Walking">Walking</option>
