@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {
+      "id": "1",
+      "date": "05/09/2025",
+      "mood": "great",
+      "description": "Today I reflected on my goals for the year: finishing the coding bootcamp, and deepening my mindfulness practice along the way.",
+      "duration": 15,
+      "activity": "Meditation"
+    },
+    {
+      "id": "2",
+      "date": "05/10/2025",
+      "mood": "good",
+      "description": "I attended an daylong meditation retreat online. One of the instructors was a psychiatrist who has written a lot about anxiety and habit loops. One of the recurring themes was curiosity. When we feel anxious or compelled to indulge in some type of bad habit, we can get curious about the feeling instead: curiosity can create some space between ourselves and a compulsion or reaction, which reduces bad habits. One quote I really liked: 'there's no such thing as two steps forward, one step backward, as long as there's awareness and a willingness to learn'.",
+      "duration": 300,
+      "activity": "Retreat"
+    },
+    {
+      "id": "3",
+      "date": "05/11/2025",
+      "mood": "good",
+      "description": "I caught myself mindlessly snacking after a stressful day at work. It's so interesting how easy it is to go into autopilot without thinking. I'm grateful I was able to become aware of the behavior in the middle of it, and to be kind and compassionate to myself without criticizing or judging myself.",
+      "duration": 30,
+      "activity": "Meditation"
+    },
+    {
+      "id": "4",
+      "date": "05/13/2025",
+      "mood": "meh",
+      "description": "Went for a walk in the woods and did some slow walking meditation, but there were some loud children running around.",
+      "duration": 30,
+      "activity": "Walking"
+    },
+    {
+      "id": "5",
+      "date": "05/15/2025",
+      "mood": "bad",
+      "description": "Today was very stressful. I didn't get a chance to meditate, but I tried staying mindful throughout the day. I was able to avoid giving in to distractions as a stress reliever though... instead, I chose to do some yoga and read a book.",
+      "duration": 30,
+      "activity": "Yoga"
+    },
+    {
+      "id": "6",
+      "date": "05/16/2025",
+      "mood": "meh",
+      "description": "Woke up early and meditated first thing... was a little sleepy but I was able to stick through it. Something about the peace and quiet of the early morning, before the concerns of the day begins.",
+      "duration": 15,
+      "activity": "Meditation"
+    },
+    {
+      "id": "7",
+      "date": "05/17/2025",
+      "mood": "good",
+      "description": "Meditated twice today; 15 mins in the morning, 15 mins before bed",
+      "duration": 30,
+      "activity": "Meditation"
+    },
+    {
+      "id": "8",
+      "date": "05/18/2025",
+      "mood": "great",
+      "description": "Went to a yoga class at a new studio & got lunch at a cafe. Felt nice to shake things up a bit and see new places",
+      "duration": 60,
+      "activity": "Yoga"
+    },
+    {
+      "id": "9",
+      "date": "05/19/2025",
+      "mood": "good",
+      "description": "Didn't get much of a chance to do any mindful activity, but I'm noticing it's much easier to stay present throughout the day... doing chores, noticing the sounds of birds, the way the sunlight hits the grass.",
+      "duration": 10,
+      "activity": "None"
+    },
+    {
+      "id": "10",
+      "date": "05/20/2025",
+      "mood": "great",
+      "description": "Going to try to sit for meditation at least once a day, for however long I manage. It can be 2 or 20 minutes--anything counts. But if not, that's okay--I can always start again.",
+      "duration": 5,
+      "activity": "Meditation"
+    }
+  ]
+}
