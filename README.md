@@ -1,15 +1,13 @@
 # Mindful Journal
 
-## Description
-
 Mindful Journal helps users track their mindfulness activities and moods through daily journal entries. Users can also view statistics about their entries, including total mindful minutes, and mood and activity distributions.
 
-## Features
+# Features
 
 - Add journal entries with a mindful activity (yoga, meditation, walking, retreat), duration of the activity, a mood, and a description.
 - View stats of journal entries.
 
-## Installation
+# Installation
 
 1. Fork and clone this repository.
 
@@ -18,7 +16,7 @@ Mindful Journal helps users track their mindfulness activities and moods through
 
 3. Set up JSON Server:
 
-Start the JSON server using your db.json file (make sure it contains an entries array, a sample db.json is provided):
+Start the JSON server using your db.json file (a sample db.json is provided):
 
 `json-server --watch db.json`
 
